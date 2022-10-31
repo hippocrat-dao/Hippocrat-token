@@ -6,7 +6,7 @@ import "./access/Ownable.sol";
 
 contract HipocratToken is ERC20, Ownable {
     // set upper limit as constant to prevent arbitrary minting
-    uint256 public constant UPPER_LIMIT = 1250000000 * (10**18);
+    uint256 public constant UPPER_LIMIT = 108473427338 * (10**16);
     // Hipocrat minted at creation
     constructor(uint256 initialSupply) ERC20("Hipocrat", "HPO") {
         _mint(msg.sender, initialSupply);
