@@ -25,7 +25,7 @@ contract HipocratToken is ERC20, Ownable {
         _burn(account, amount);
     }
     // ERC20 is capped
-    function _mint(address account, uint256 amount) internal virtual override {
+    function _mint(address account, uint256 amount) internal override {
         require(ERC20.totalSupply() + amount <= UPPER_LIMIT, "ERC20Capped: cap exceeded");
         super._mint(account, amount);
     }
