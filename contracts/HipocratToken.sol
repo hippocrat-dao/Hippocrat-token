@@ -9,8 +9,8 @@ contract HipocratToken is ERC20, Ownable {
     // set upper limit as constant to prevent arbitrary minting
     uint256 public constant UPPER_LIMIT = 1250000000 * (10**18);
     // Hipocrat minted at creation
-    constructor(uint256 _initialSupply) ERC20("Hipocrat", "HPO") {
-        _mint(msg.sender, _initialSupply);
+    constructor(uint256 initialSupply) ERC20("Hipocrat", "HPO") {
+        _mint(msg.sender, initialSupply);
     }
     // ERC20 is mintable
     function mint(address to, uint256 amount) public onlyOwner {
