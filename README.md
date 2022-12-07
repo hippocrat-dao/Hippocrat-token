@@ -1,2 +1,2 @@
-# Hipocrat-token
-Hipocrat-token smart contract
+# Hippocrat-token
+Hippocrat-token smart contract
