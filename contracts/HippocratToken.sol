@@ -4,11 +4,11 @@ pragma solidity ^0.8.0;
 import "./token/ERC20.sol";
 import "./access/Ownable.sol";
 
-contract HipocratToken is ERC20, Ownable {
+contract HippocratToken is ERC20, Ownable {
     // set upper limit as constant to prevent arbitrary minting
     uint256 public constant UPPER_LIMIT = 108473427338 * (10**16);
-    // Hipocrat minted at creation
-    constructor(uint256 initialSupply) ERC20("Hipocrat", "HPO") {
+    // Hippocrat minted at creation
+    constructor(uint256 initialSupply) ERC20("Hippocrat", "HPO") {
         _mint(msg.sender, initialSupply);
     }
     // ERC20 is mintable
